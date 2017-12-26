@@ -1,5 +1,5 @@
 <template>
-  <el-row type="flex" justify="center">
+  <el-row class="loginBg" type="flex" justify="center">
     <el-col :xs="18" :sm="12" :md="10" :lg="8">
       <el-card class="box-card">
         <div slot="header" class="clearfix">
@@ -100,9 +100,10 @@
 </script>
 
 <style>
-  body{}
-  .box-card{margin-top: 80px}
+  .loginBg{background: url('~static/images/banner.jpg') no-repeat;position: absolute;top: 0;bottom: 0;left: 0;right: 0;background-size: 100% 100%;}
+  .box-card{margin-top: 150px;background-color: rgba(255, 255, 255, 0.4)}
   .submit-btn{width: 100%}
+  .el-input__inner{background-color: rgba(255, 255, 255, 0.6)}
   @media (max-width: 768px){
     .el-col-xs-18 .el-card{
       border: none;
@@ -116,12 +117,15 @@
     text-decoration: none;
     display: inline-block;
     float: right;
-    color: #6e6e6e;
+    color: black;
   }
   .retrieve {
     text-decoration: none;
     display: inline-block;
     float: left;
-    color: #6e6e6e;
+    color: black;
+  }
+  .retrieve:hover,.register:hover{
+    color: #fc9538;
   }
 </style>

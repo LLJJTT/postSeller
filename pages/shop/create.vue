@@ -3,7 +3,7 @@
     <el-col :xs="22" :sm="18" :md="16" :lg="12">
       <el-card class="box-card">
         <div slot="header" class="head clearfix">
-          <h3>创建店铺</h3>
+          <h3>创建店铺</h3> 
         </div>
         <el-form :model="shopInfo" :rules="rules" ref="shopInfo">
           <el-form-item prop="name" label="店铺名称"
